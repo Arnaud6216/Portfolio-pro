@@ -1,0 +1,31 @@
+.nav-top {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: rgb(175, 175, 175);
+	transition: 0.3s ease-in-out;
+}
+
+.nav-scroll {
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	width: 80%;
+	border-radius: 50px;
+	margin: 0 auto;
+	background-color: royalblue;
+	transition: 0.3s ease-in-out;
+}
+
+.nav__link {
+	margin: 0 5px;
+}

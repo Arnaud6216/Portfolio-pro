@@ -3,10 +3,13 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <h1 className="home__title">Bonjour, je suis Arnaud Guevaer</h1>
-      <h2 className="home__subtitle">Développeur web</h2>
-      <section className="home__section" id="home">
+      <section className="home__section1" id="profile">
+        <h1 className="home__title">Bonjour, je suis Arnaud Guevaer</h1>
+        <h2 className="home__subtitle">Développeur web</h2>
         <img src="" alt="Arnaud Guevaer" className="home__img" />
+      </section>
+
+      <section className="home__section2" id="home">
         <p className="home__description">
           Passionnée depuis toujours par les nouvelles technologies et les jeux
           vidéo, j’ai décidé de me reconvertir dans le développement web pour

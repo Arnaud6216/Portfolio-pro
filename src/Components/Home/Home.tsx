@@ -4,9 +4,15 @@ function Home() {
   return (
     <>
       <section className="home__section1" id="profile">
-        <h1 className="home__title">Bonjour, je suis Arnaud Guevaer</h1>
+        <h1 className="home__title">
+          Bonjour, je suis <span className="home__name">Arnaud Guevaer</span>
+        </h1>
         <h2 className="home__subtitle">Développeur web</h2>
-        <img src="" alt="Arnaud Guevaer" className="home__img" />
+        <img
+          src="public\arnaud.jpg"
+          alt="Arnaud Guevaer"
+          className="home__img"
+        />
       </section>
 
       <section className="home__section2" id="home">

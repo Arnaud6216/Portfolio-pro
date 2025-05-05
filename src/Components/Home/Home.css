@@ -19,6 +19,16 @@
 }
 
 .home__img {
-	width: 80%;
-	border-radius: 90px;
+	width: 70%;
+	border-radius: 70px;
+}
+
+.home__status {
+	text-align: center;
+	font-weight: bold;
+}
+
+.home__description {
+	margin: 1rem;
+	line-height: 20px;
 }

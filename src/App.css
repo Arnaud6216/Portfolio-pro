@@ -1,52 +1,57 @@
-:root {
-	--darkBlue-1: #000;
-	--darkBlue-2: #0b101f;
-	--darkBlue-3: #142045;
-	--darkBlue-4: #1b2c60;
-	--darkBlue-5: #233774;
-	--darkBlue-6: #2c4384;
-	--darkBlue-7: #365099;
-	--darkBlue-8: #405db3;
-	--darkBlue-9: #3a5fdc;
-	--darkBlue-10: #3b58ae;
-	--darkBlue-11: #92b4ff;
-	--darkBlue-12: #d4e2ff;
-	--lightBlue-1: #fdfdfe;
-	--lightBlue-2: #f7f9ff;
-	--lightBlue-3: #edf2fe;
-	--lightBlue-4: #dfeaff;
-	--lightBlue-5: #d0dfff;
-	--lightBlue-6: #bdd1ff;
-	--lightBlue-7: #a6bff9;
-	--lightBlue-8: #87a5ef;
-	--lightBlue-9: #3d63dd;
-	--lightBlue-10: #3657c3;
-	--lightBlue-11: #395bc7;
-	--lightBlue-12: #1d2e5c;
-	--darkGray-1: #000;
-	--darkGray-2: #121212;
-	--darkGray-3: #1f1f1f;
-	--darkGray-4: #282828;
-	--darkGray-5: #303030;
-	--darkGray-6: #3a3a3a;
-	--darkGray-7: #484848;
-	--darkGray-8: #5f5f5f;
-	--darkGray-9: #6e6e6e;
-	--darkGray-10: #7b7b7b;
-	--darkGray-11: #b4b4b4;
-	--darkGray-12: #eee;
-	--lightGray-1: #fcfcfd;
-	--lightGray-2: #f9f9fb;
-	--lightGray-3: #eff0f3;
-	--lightGray-4: #e7e8ec;
-	--lightGray-5: #e0e1e6;
-	--lightGray-6: #d8d9e0;
-	--lightGray-7: #cdced7;
-	--lightGray-8: #b9bbc6;
-	--lightGray-9: #8b8d98;
-	--lightGray-10: #80828d;
-	--lightGray-11: #62636c;
-	--lightGray-12: #1e1f24;
+.dark-theme {
+	--blue-1: #000;
+	--blue-2: #0b101f;
+	--blue-3: #142045;
+	--blue-4: #1b2c60;
+	--blue-5: #233774;
+	--blue-6: #2c4384;
+	--blue-7: #365099;
+	--blue-8: #405db3;
+	--blue-9: #3a5fdc;
+	--blue-10: #3b58ae;
+	--blue-11: #92b4ff;
+	--blue-12: #d4e2ff;
+
+	--gray-1: #000;
+	--gray-2: #121212;
+	--gray-3: #1f1f1f;
+	--gray-4: #282828;
+	--gray-5: #303030;
+	--gray-6: #3a3a3a;
+	--gray-7: #484848;
+	--gray-8: #5f5f5f;
+	--gray-9: #6e6e6e;
+	--gray-10: #7b7b7b;
+	--gray-11: #b4b4b4;
+	--gray-12: #eee;
+}
+
+.light-theme {
+	--blue-1: #fdfdfe;
+	--blue-2: #f7f9ff;
+	--blue-3: #edf2fe;
+	--blue-4: #dfeaff;
+	--blue-5: #d0dfff;
+	--blue-6: #bdd1ff;
+	--blue-7: #a6bff9;
+	--blue-8: #87a5ef;
+	--blue-9: #3d63dd;
+	--blue-10: #3657c3;
+	--blue-11: #395bc7;
+	--blue-12: #1d2e5c;
+
+	--gray-1: #fcfcfd;
+	--gray-2: #f9f9fb;
+	--gray-3: #eff0f3;
+	--gray-4: #e7e8ec;
+	--gray-5: #e0e1e6;
+	--gray-6: #d8d9e0;
+	--gray-7: #cdced7;
+	--gray-8: #b9bbc6;
+	--gray-9: #8b8d98;
+	--gray-10: #80828d;
+	--gray-11: #62636c;
+	--gray-12: #1e1f24;
 }
 
 #root {

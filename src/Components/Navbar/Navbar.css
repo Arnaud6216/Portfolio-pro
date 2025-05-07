@@ -10,7 +10,7 @@
 	height: 30px;
 	border-radius: 50px;
 	margin: 0 auto;
-	background-color: royalblue;
+	background-color: var(--blue-5);
 	transform: translateX(-50%);
 	left: 50%;
 }

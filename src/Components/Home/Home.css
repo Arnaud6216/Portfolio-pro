@@ -7,28 +7,39 @@
 
 .home__title {
 	margin-bottom: 0;
+	color: var(--gray-12);
 }
 
 .home__name {
-	color: brown;
+	color: var(--blue-11);
 }
 
 .home__subtitle {
 	margin-top: 0.2rem;
 	font-size: 1.3rem;
+	color: var(--gray-12);
 }
 
 .home__img {
 	width: 70%;
 	border-radius: 70px;
+	border: solid 2px var(--blue-6);
 }
 
 .home__status {
 	text-align: center;
 	font-weight: bold;
+	background-color: var(--blue-5);
+	color: var(--blue-12);
+	padding: 1rem;
+	width: 80%;
+	border-radius: 10px;
 }
 
 .home__description {
 	margin: 1rem;
 	line-height: 20px;
+	color: var(--gray-12);
+	border-left: max(0.5em, .25em) solid var(--blue-6);
+	padding-left: 1em;
 }

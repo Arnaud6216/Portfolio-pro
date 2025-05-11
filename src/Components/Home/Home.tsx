@@ -8,11 +8,7 @@ function Home() {
           Bonjour, je suis <span className="home__name">Arnaud Guevaer</span>,
         </h1>
         <h2 className="home__subtitle">Développeur web</h2>
-        <img
-          src="public\arnaud.jpg"
-          alt="Arnaud Guevaer"
-          className="home__img"
-        />
+        <img src="./arnaud.jpg" alt="Arnaud Guevaer" className="home__img" />
         <p className="home__status">
           Status : En recherche d'une alternance pour septembre 2025
         </p>

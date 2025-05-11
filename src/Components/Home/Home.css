@@ -40,6 +40,6 @@
 	margin: 1rem;
 	line-height: 20px;
 	color: var(--gray-12);
-	border-left: max(0.5em, .25em) solid var(--blue-6);
+	border-left: max(0.5em, .25em) solid var(--blue-7);
 	padding-left: 1em;
 }

@@ -1,27 +1,40 @@
 import "./Projects.css";
 
 function Projects() {
+  const project = [
+    {
+      title: "Wild Away",
+      description:
+        "Une application de réservation d'hotêls et de restaurants partout dans le monde avec une carte interactive.",
+      img: "wildaway.png",
+    },
+    {
+      title: "Code Quest Academy",
+      description:
+        "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies, tout en explorant un narratif inspiré de la pop culture.",
+      img: "./codequest.png",
+    },
+    {
+      title: "Z Warriors Clicker",
+      description:
+        "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
+      img: "./zwarrior.png",
+    },
+  ];
+
   return (
     <>
       <section className="projects__section" id="projects">
         <h2 className="projects__title">Projets</h2>
 
         <article className="projects__card">
-          <h3>Projet 1</h3>
-          <img src="" alt="Projet 1" />
-          <p>Description</p>
-        </article>
-
-        <article className="projects__card">
-          <h3>Projet 2</h3>
-          <img src="" alt="Projet 1" />
-          <p>Description</p>
-        </article>
-
-        <article className="projects__card">
-          <h3>Projet 3</h3>
-          <img src="" alt="Projet 1" />
-          <p>Description</p>
+          {project.map((item) => (
+            <div key={item.title}>
+              <h3>{item.title}</h3>
+              <img className="projects__img" src={item.img} alt={item.title} />
+              <p>{item.description}</p>
+            </div>
+          ))}
         </article>
       </section>
     </>

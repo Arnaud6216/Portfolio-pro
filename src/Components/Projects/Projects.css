@@ -1,0 +1,15 @@
+.projects__section {
+	color: var(--blue-12);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects__card {
+	width: 100%;
+}
+
+.projects__img {
+	width: 80%;
+	border-radius: 10px;
+}

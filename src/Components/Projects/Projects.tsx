@@ -27,15 +27,16 @@ function Projects() {
       <section className="projects__section" id="projects">
         <h2 className="projects__title">Projets</h2>
 
-        <article className="projects__card">
-          {project.map((item) => (
-            <div key={item.title}>
-              <h3>{item.title}</h3>
-              <img className="projects__img" src={item.img} alt={item.title} />
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </article>
+        {project.map((item) => (
+          <article className="projects__card" key={item.title}>
+            <h3 className="projects__card__title">{item.title}</h3>
+            <img
+              className="projects__card__img"
+              src={item.img}
+              alt={item.title}
+            />
+          </article>
+        ))}
       </section>
     </>
   );

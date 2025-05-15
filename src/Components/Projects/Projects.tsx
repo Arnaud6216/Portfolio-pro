@@ -1,6 +1,15 @@
 import "./Projects.css";
+import { useState } from "react";
 
 function Projects() {
+  interface Project {
+    title: string;
+    description: string;
+    img: string;
+  }
+
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   const project = [
     {
       title: "Wild Away",
@@ -34,9 +43,42 @@ function Projects() {
               className="projects__card__img"
               src={item.img}
               alt={item.title}
+              onClick={() => setSelectedProject(item)}
+              onKeyUp={() => setSelectedProject(item)}
             />
           </article>
         ))}
+
+        {selectedProject && (
+          <div
+            className="projects__popup__overlay"
+            onClick={() => setSelectedProject(null)}
+            onKeyUp={() => setSelectedProject(null)}
+          >
+            <div
+              className="projects__popup__content"
+              onClick={(e) => e.stopPropagation()}
+              onKeyUp={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="projects__popup__close"
+                onClick={() => setSelectedProject(null)}
+              >
+                ✖
+              </button>
+              <h2 className="projects__popup__title">{selectedProject.title}</h2>
+              <img
+                className="projects__card__img"
+                src={selectedProject.img}
+                alt={selectedProject.title}
+              />
+              <p className="projects__popup__description">
+                {selectedProject.description}
+              </p>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );

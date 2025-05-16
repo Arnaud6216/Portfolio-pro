@@ -7,33 +7,43 @@ function Contact() {
         <h2 className="contact__title">Contact</h2>
 
         <form action="submit" className="contact__form">
-          <label htmlFor="name">Nom</label>
+          <label className="contact__label" htmlFor="name">
+            Nom
+          </label>
           <input
             className="contact__input"
             id="name"
             name="name"
             type="text"
+            placeholder="Tapez votre nom..."
             required
           />
 
-          <label htmlFor="email">Email</label>
+          <label className="contact__label" htmlFor="email">
+            Email
+          </label>
           <input
             className="contact__input"
             id="email"
             name="email"
             type="email"
+            placeholder="Tapez votre email..."
             required
           />
 
-          <label htmlFor="message">Message</label>
+          <label className="contact__label" htmlFor="message">
+            Message
+          </label>
           <textarea
-            className="contact__input"
             name="message"
             id="message"
+            placeholder="Tapez votre message..."
             required
           />
 
-          <button type="submit">Envoyer</button>
+          <button className="contact__button" type="submit">
+            Envoyer
+          </button>
         </form>
       </section>
     </>

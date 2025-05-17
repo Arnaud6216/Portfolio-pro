@@ -65,3 +65,12 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.section__title {
+	background-color: var(--blue-3);
+	text-align: center;
+	padding: 1rem;
+	color: var(--blue-12);
+	margin-top: 0;
+	width: 100%;
+}

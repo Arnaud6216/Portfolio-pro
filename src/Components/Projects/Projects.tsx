@@ -34,7 +34,7 @@ function Projects() {
   return (
     <>
       <section className="projects__section" id="projects">
-        <h2 className="projects__title">Projets</h2>
+        <h2 className="section__title">Projets</h2>
 
         {project.map((item) => (
           <article className="projects__card" key={item.title}>
@@ -67,7 +67,9 @@ function Projects() {
               >
                 ✖
               </button>
-              <h2 className="projects__popup__title">{selectedProject.title}</h2>
+              <h2 className="projects__popup__title">
+                {selectedProject.title}
+              </h2>
               <img
                 className="projects__card__img"
                 src={selectedProject.img}

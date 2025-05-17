@@ -52,7 +52,7 @@ function Skills() {
   return (
     <>
       <section className="skills__section" id="skills">
-        <h2 className="skills__title">Compétences</h2>
+        <h2 className="section__title">Compétences</h2>
 
         <article className="skills__article">
           <h3 className="skills__subtitle">Front-end</h3>

@@ -4,7 +4,13 @@ function Contact() {
   return (
     <>
       <section className="contact__section" id="contact">
-        <h2 className="contact__title">Contact</h2>
+        <h2 className="section__title">Contact</h2>
+
+        <p className="contact__intro">
+          Une question, un retour, ou juste envie d’échanger autour de la tech ?{" "}
+          <br />
+          N’hésite pas à me contacter !
+        </p>
 
         <form action="submit" className="contact__form">
           <label className="contact__label" htmlFor="name">

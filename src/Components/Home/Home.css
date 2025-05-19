@@ -3,11 +3,10 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 5rem;
 }
 
 .home__title {
-	margin-bottom: 0;
+	margin: 2rem 3rem 0;
 	color: var(--gray-12);
 	text-align: center;
 }
@@ -26,9 +25,11 @@
 	width: 70%;
 	border-radius: 70px;
 	border: solid 2px var(--blue-6);
+	margin: 1rem 0;
 }
 
 .home__status {
+	position: relative;
 	text-align: center;
 	font-weight: bold;
 	background-color: var(--blue-5);
@@ -39,7 +40,7 @@
 }
 
 .home__description {
-	margin: 1rem;
+	margin: 2rem 1rem;
 	line-height: 20px;
 	color: var(--gray-12);
 	border-left: max(0.5em, .25em) solid var(--blue-7);

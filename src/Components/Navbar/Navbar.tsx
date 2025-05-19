@@ -7,15 +7,6 @@ function Navbar() {
       <nav className="nav">
         <section className="nav__section1">
           <a href="#profile" className="nav__link">
-            <DynamicIcon
-              name="house"
-              color="white"
-              size={24}
-              aria-label="Introduction"
-            />
-          </a>
-
-          <a href="#home" className="nav__link">
             <DynamicIcon name="user-round" color="white" size={24} />
           </a>
 

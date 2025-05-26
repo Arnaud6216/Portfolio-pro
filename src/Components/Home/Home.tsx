@@ -20,8 +20,8 @@ function Home() {
           Passionnée depuis toujours par les nouvelles technologies et les jeux
           vidéo, j’ai décidé de me reconvertir dans le développement web pour
           faire de cette passion mon métier. <br />
-          <br /> J’ai ainsi intégré la Wild Code School et obtenu mon diplôme de
-          developpeur web et web mobile. <br />
+          <br /> J’ai ainsi intégré la Wild Code School en septembre 2024 et
+          obtenu mon diplôme de developpeur web et web mobile. <br />
           <br />
           Avant cette reconversion, mon parcours a débuté en tant que Gendarme
           Adjoint Volontaire, une expérience marquante qui m’a inculqué rigueur,

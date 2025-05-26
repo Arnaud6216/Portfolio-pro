@@ -5,6 +5,10 @@
 	align-items: center;
 }
 
+.home__section2 {
+	margin-bottom: 5rem;
+}
+
 .home__title {
 	margin: 2rem 3rem 0;
 	color: var(--gray-12);
@@ -13,6 +17,27 @@
 
 .home__name {
 	color: var(--blue-11);
+	display: inline-block;
+	white-space: nowrap;
+	border-right: 2px solid #005eff;
+	font-size: 30px;
+	animation: typing 1.8s steps(14) 1, blink 0.75s step-end infinite;
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .home__subtitle {

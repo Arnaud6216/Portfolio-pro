@@ -9,7 +9,7 @@ function Contact() {
         <p className="contact__intro">
           Une question, un retour, ou juste envie d’échanger autour de la tech ?{" "}
           <br />
-          N’hésite pas à me contacter !
+          N’hésitez pas à me contacter !
         </p>
 
         <form action="submit" className="contact__form">

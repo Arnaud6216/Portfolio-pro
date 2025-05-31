@@ -12,7 +12,11 @@ function Contact() {
           N’hésitez pas à me contacter !
         </p>
 
-        <form action="submit" className="contact__form">
+        <form
+          action="https://formspree.io/f/movwakpv"
+          method="POST"
+          className="contact__form"
+        >
           <label className="contact__label" htmlFor="name">
             Nom
           </label>

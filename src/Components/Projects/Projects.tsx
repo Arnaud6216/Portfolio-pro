@@ -23,6 +23,7 @@ function Projects() {
       description:
         "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies, tout en explorant un narratif inspiré de la pop culture.",
       img: "./codequest.png",
+      video: "./codequest-video.mp4",
     },
     {
       title: "Z Warriors Clicker",

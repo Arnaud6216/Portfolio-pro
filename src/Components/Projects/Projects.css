@@ -88,6 +88,10 @@
 	margin: 0;
 }
 
+.projects__popup__video {
+	width: 100%;
+}
+
 .projects__popup__description {
 	background-color: var(--blue-4);
 	margin: 0;

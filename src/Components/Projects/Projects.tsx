@@ -6,6 +6,7 @@ function Projects() {
     title: string;
     description: string;
     img: string;
+    video?: string;
   }
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -28,6 +29,7 @@ function Projects() {
       description:
         "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
       img: "./zwarrior.png",
+      video: "./zwarrior-video.mp4",
     },
   ];
 
@@ -70,11 +72,23 @@ function Projects() {
               <h2 className="projects__popup__title">
                 {selectedProject.title}
               </h2>
-              <img
-                className="projects__card__img"
-                src={selectedProject.img}
-                alt={selectedProject.title}
-              />
+              {selectedProject.video && (
+                <video
+                  className="projects__popup__video"
+                  src={selectedProject.video}
+                  autoPlay
+                  loop
+                >
+                  <track
+                    kind="captions"
+                    srcLang="fr"
+                    label="French captions"
+                    src=""
+                    default
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              )}
               <p className="projects__popup__description">
                 {selectedProject.description}
               </p>

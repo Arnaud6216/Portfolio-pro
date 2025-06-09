@@ -7,6 +7,7 @@ function Projects() {
     description: string;
     img: string;
     video?: string;
+    github?: string;
   }
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -15,16 +16,19 @@ function Projects() {
     {
       title: "Legodex",
       description:
-        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h",
+        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h.",
       img: "legodex.png",
       video: "legodex-video.mp4",
+      github: "https://github.com/Arnaud6216/LegoDex",
     },
     {
       title: "Code Quest Academy",
       description:
-        "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies, tout en explorant un narratif inspiré de la pop culture.",
+        "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies.",
       img: "./codequest.png",
       video: "./codequest-video.mp4",
+      github:
+        "https://github.com/WildCodeSchool-2024-09/JS-lille-P3-code-quest-academy",
     },
     {
       title: "Z Warriors Clicker",
@@ -32,6 +36,7 @@ function Projects() {
         "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
       img: "./zwarrior.png",
       video: "./zwarrior-video.mp4",
+      github: "https://github.com/Arnaud6216/Z-Warriors-Clicker",
     },
   ];
 
@@ -94,6 +99,12 @@ function Projects() {
               <p className="projects__popup__description">
                 {selectedProject.description}
               </p>
+              <a
+                className="projects__popup__link"
+                href={selectedProject.github}
+              >
+                Voir sur Github
+              </a>
             </div>
           </div>
         )}

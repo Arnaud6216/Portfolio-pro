@@ -13,10 +13,11 @@ function Projects() {
 
   const project = [
     {
-      title: "Wild Away",
+      title: "Legodex",
       description:
-        "Une application de réservation d'hotêls et de restaurants partout dans le monde avec une carte interactive.",
-      img: "wildaway.png",
+        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h",
+      img: "legodex.png",
+      video: "legodex-video.mp4",
     },
     {
       title: "Code Quest Academy",

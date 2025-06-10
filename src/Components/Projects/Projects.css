@@ -100,6 +100,17 @@
 	border-radius: 10px;
 }
 
+.projects__popup__tech-container {
+	margin: 0.3rem 0;
+}
+
+.projects__popup__tech {
+	width: 30px;
+	border-radius: 20px;
+	border: solid 2px var(--gray-9);
+	margin: 0 0.2rem;
+}
+
 .projects__popup__link {
 	text-decoration: none;
 	color: var(--gray-12);

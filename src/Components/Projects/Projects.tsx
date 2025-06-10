@@ -8,18 +8,20 @@ function Projects() {
     img: string;
     video?: string;
     github?: string;
+    technology?: string[];
   }
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const project = [
     {
-      title: "Legodex",
+      title: "Z Warriors Clicker",
       description:
-        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h.",
-      img: "legodex.png",
-      video: "legodex-video.mp4",
-      github: "https://github.com/Arnaud6216/LegoDex",
+        "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
+      img: "./zwarrior.png",
+      video: "./zwarrior-video.mp4",
+      github: "https://github.com/Arnaud6216/Z-Warriors-Clicker",
+      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
     },
     {
       title: "Code Quest Academy",
@@ -29,14 +31,17 @@ function Projects() {
       video: "./codequest-video.mp4",
       github:
         "https://github.com/WildCodeSchool-2024-09/JS-lille-P3-code-quest-academy",
+      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
     },
+
     {
-      title: "Z Warriors Clicker",
+      title: "Legodex",
       description:
-        "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
-      img: "./zwarrior.png",
-      video: "./zwarrior-video.mp4",
-      github: "https://github.com/Arnaud6216/Z-Warriors-Clicker",
+        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h.",
+      img: "legodex.png",
+      video: "legodex-video.mp4",
+      github: "https://github.com/Arnaud6216/LegoDex",
+      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
     },
   ];
 
@@ -96,6 +101,16 @@ function Projects() {
                   Your browser does not support the video tag.
                 </video>
               )}
+              <div className="projects__popup__tech-container">
+                {selectedProject.technology?.map((tech) => (
+                  <img
+                    key={tech}
+                    className="projects__popup__tech"
+                    src={tech}
+                    alt="Technologie utilisée"
+                  />
+                ))}
+              </div>
               <p className="projects__popup__description">
                 {selectedProject.description}
               </p>

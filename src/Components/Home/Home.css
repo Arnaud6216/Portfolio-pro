@@ -7,6 +7,8 @@
 
 .home__section2 {
 	margin-bottom: 5rem;
+	display: flex;
+	justify-content: center;
 }
 
 .home__title {
@@ -48,6 +50,7 @@
 
 .home__img {
 	width: 70%;
+	max-width: 400px;
 	border-radius: 70px;
 	border: solid 2px var(--blue-6);
 	margin: 1rem 0;
@@ -62,6 +65,7 @@
 	padding: 1rem;
 	width: 80%;
 	border-radius: 10px;
+	max-width: 480px;
 }
 
 .home__description {
@@ -70,4 +74,5 @@
 	color: var(--gray-12);
 	border-left: max(0.5em, .25em) solid var(--blue-7);
 	padding-left: 1em;
+	max-width: 650px;
 }

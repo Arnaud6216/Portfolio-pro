@@ -12,6 +12,7 @@
 	border: solid 1px var(--gray-9);
 	background-color: var(--gray-5);
 	border-radius: 10px;
+	max-width: 270px;
 }
 
 .skills__list {
@@ -53,4 +54,13 @@
 	margin-left: 0;
 	background-color: var(--gray-2);
 	border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+	.skills__section {
+		flex-direction: initial;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 3rem;
+	}
 }

@@ -1,19 +1,11 @@
 import "./Projects.css";
-import { useState } from "react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
 
 function Projects() {
-  interface Project {
-    title: string;
-    description: string;
-    img: string;
-    video?: string;
-    github?: string;
-    technology?: string[];
-  }
-
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  const project = [
+  const slidesData = [
     {
       title: "Z Warriors Clicker",
       description:
@@ -47,83 +39,42 @@ function Projects() {
 
   return (
     <>
-      <section className="projects__section" id="projects">
-        <h2 className="section__title">Projets</h2>
-
-        {project.map((item) => (
-          <article className="projects__card" key={item.title}>
-            <h3 className="projects__card__title">{item.title}</h3>
-            <img
-              className="projects__card__img"
-              src={item.img}
-              alt={item.title}
-              onClick={() => setSelectedProject(item)}
-              onKeyUp={() => setSelectedProject(item)}
-            />
-          </article>
-        ))}
-
-        {selectedProject && (
-          <div
-            className="projects__popup__overlay"
-            onClick={() => setSelectedProject(null)}
-            onKeyUp={() => setSelectedProject(null)}
+      <h2 className="section__title">Projets</h2>
+      <main>
+        <div className="container">
+          <Swiper
+            modules={[Pagination]}
+            grabCursor
+            initialSlide={0}
+            centeredSlides
+            slidesPerView={1}
+            speed={800}
+            slideToClickedSlide
+            pagination={{ clickable: true }}
+            breakpoints={{
+              320: { spaceBetween: 40 },
+              650: { spaceBetween: 30 },
+              1000: { spaceBetween: 20 },
+            }}
           >
-            <div
-              className="projects__popup__content"
-              onClick={(e) => e.stopPropagation()}
-              onKeyUp={(e) => e.stopPropagation()}
-            >
-              <button
-                type="button"
-                className="projects__popup__close"
-                onClick={() => setSelectedProject(null)}
-              >
-                ✖
-              </button>
-              <h2 className="projects__popup__title">
-                {selectedProject.title}
-              </h2>
-              {selectedProject.video && (
-                <video
-                  className="projects__popup__video"
-                  src={selectedProject.video}
-                  autoPlay
-                  loop
-                >
-                  <track
-                    kind="captions"
-                    srcLang="fr"
-                    label="French captions"
-                    src=""
-                    default
-                  />
-                  Your browser does not support the video tag.
-                </video>
-              )}
-              <div className="projects__popup__tech-container">
-                {selectedProject.technology?.map((tech) => (
-                  <img
-                    key={tech}
-                    className="projects__popup__tech"
-                    src={tech}
-                    alt="Technologie utilisée"
-                  />
-                ))}
-              </div>
-              <p className="projects__popup__description">
-                {selectedProject.description}
-              </p>
-              <a
-                className="projects__popup__link"
-                href={selectedProject.github}
-              >
-                Voir sur Github
-              </a>
-            </div>
-          </div>
-        )}
-      </section>
+            {slidesData.map((slide) => (
+              <SwiperSlide key={slide.title}>
+                <img
+                  className="projects__card__img"
+                  src={slide.img}
+                  alt={slide.title}
+                />
+                <div className="content">
+                  <div className="text-box">
+                    <h3 className="projects__card__title">{slide.title}</h3>
+                    <p>{slide.description}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </main>
     </>
   );
 }

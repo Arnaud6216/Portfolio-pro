@@ -1,11 +1,11 @@
 import "./Projects.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 function Projects() {
-  const slidesData = [
+  const projects = [
     {
       title: "Z Warriors Clicker",
       description:
@@ -40,41 +40,32 @@ function Projects() {
   return (
     <>
       <h2 className="section__title">Projets</h2>
-      <main>
-        <div className="container">
-          <Swiper
-            modules={[Pagination]}
-            grabCursor
-            initialSlide={0}
-            centeredSlides
-            slidesPerView={1}
-            speed={800}
-            slideToClickedSlide
-            pagination={{ clickable: true }}
-            breakpoints={{
-              320: { spaceBetween: 40 },
-              650: { spaceBetween: 30 },
-              1000: { spaceBetween: 20 },
-            }}
-          >
-            {slidesData.map((slide) => (
-              <SwiperSlide key={slide.title}>
-                <img
-                  className="projects__card__img"
-                  src={slide.img}
-                  alt={slide.title}
-                />
-                <div className="content">
-                  <div className="text-box">
-                    <h3 className="projects__card__title">{slide.title}</h3>
-                    <p>{slide.description}</p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </main>
+      <section className="project__container">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          loop
+        >
+          {projects.map((project) => (
+            <SwiperSlide key={project.title}>
+              <img
+                src={project.img}
+                className="project__img"
+                alt="Project preview"
+              />
+              <div className="project__content">
+                <h3 className="project__title">{project.title}</h3>
+                <p className="project__text">{project.description}</p>
+                <a className="project__github" href={project.github}>
+                  Voir sur Github
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
     </>
   );
 }

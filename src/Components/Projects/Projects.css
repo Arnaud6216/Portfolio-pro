@@ -1,102 +1,59 @@
-.projects__card__img {
-	display: block;
+.project__img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	background: black;
-}
-
-.container {
-	width: 80%;
-}
-
-.swiper {
-	width: 100%;
-	padding: 60px;
-}
-
-.swiper-slide {
-	position: relative;
-
-	background: var(--gray-5);
-	box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.2);
+	height: 500px;
 	border-radius: 10px;
-	overflow: hidden;
-	transition: 1s;
-	user-select: none;
 }
 
-.swiper-slide-active {
-	width: 500px;
-	transition: width 1s ease-out;
-	border: 3px solid var(--blue-8);
+.project__container {
+	height: 73vh;
+	max-width: 1000px;
+	margin: 4rem auto;
+	border: solid 2px var(--blue-9);
+	border-radius: 10px;
 }
 
-.projects__card__title {
-	font-size: 2rem;
+.project__container:hover {
+	cursor: -moz-grab;
+}
+
+.project__content {
+	position: relative;
 	color: var(--gray-12);
-	opacity: 1;
-	transition: 0.8s ease;
-	transition-delay: 1s;
+	border-left: solid 6px var(--blue-7);
+	margin-left: 1rem;
 }
 
-.content {
-	position: absolute;
-	inset: 0;
-	width: 100%;
-	height: 100%;
-	padding: 25px var(--gap) 65px;
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	background: rgba(0, 0, 0, 0.5);
-	background-image: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0.4),
-		rgba(0, 0, 0, 0.7)
-	);
-	color: var(--gray-12);
-	opacity: 0;
-	z-index: 1;
+.project__title {
+	margin-left: 1rem;
 }
 
-.swiper-slide-active .content {
-	opacity: 1;
-	transition: 0.8s;
-	transition-delay: 0.5s;
+.project__text {
+	margin: 0.5rem 1rem;
 }
 
-.text-box {
-	width: 80%;
-	border-left: 4px solid var(--blue-7);
-	padding-left: 10px;
-	margin-left: 30px;
-	margin-bottom: 8px;
-	opacity: 0;
+.project__github {
+	margin-left: 1rem;
+	text-decoration: none;
+	color: var(--blue-11);
+	font-weight: bold;
+}
+.project__github:hover {
+	color: var(--blue-9);
 }
 
-.swiper-slide-active .text-box {
-	opacity: 1;
-	transition: 0.5s;
-	transition-delay: 1s;
+.swiper-button-next,
+.swiper-button-prev {
+	background-color: var(--blue-2);
+	border: 2px solid var(--blue-9);
 }
 
-.text-box p {
-	font-size: 1rem;
-	transform: translateY(100%);
-	opacity: 0;
+.swiper-button-next:hover {
+	background-color: var(--blue-9);
+	color: var(--blue-2);
+	border: 2px solid var(--blue-2);
 }
-
-.swiper-slide-active .text-box p {
-	transform: translateY(0);
-	opacity: 1;
-	transition: 1.5s ease;
-	transition-delay: 1s;
+.swiper-button-prev:hover {
+	background-color: var(--blue-9);
+	color: var(--blue-2);
+	border: 2px solid var(--blue-2);
 }

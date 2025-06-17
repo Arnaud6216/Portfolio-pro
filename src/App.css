@@ -85,7 +85,8 @@ label {
 h3,
 li,
 input,
-textarea {
+textarea,
+a {
 	font-family: "Inter", sans-serif;
 }
 

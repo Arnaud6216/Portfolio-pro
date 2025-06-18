@@ -3,8 +3,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useState } from "react";
 
 function Projects() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
+  const handleOpenVideo = (videoSrc: string) => {
+    setActiveVideo(videoSrc);
+  };
+
+  const handleCloseVideo = () => {
+    setActiveVideo(null);
+  };
+
   const projects = [
     {
       title: "Z Warriors Clicker",
@@ -39,7 +50,9 @@ function Projects() {
 
   return (
     <>
-      <h2 className="section__title">Projets</h2>
+      <h2 className="section__title" id="projects">
+        Projets
+      </h2>
       <section className="project__container">
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -50,15 +63,29 @@ function Projects() {
         >
           {projects.map((project) => (
             <SwiperSlide key={project.title}>
-              <img
-                src={project.img}
-                className="project__img"
-                alt="Project preview"
-              />
+              <div className="project__media">
+                <img
+                  src={project.img}
+                  className="project__img"
+                  alt="aperçu du projet"
+                />
+                <button
+                  type="button"
+                  className="project__video-btn"
+                  onClick={() => handleOpenVideo(project.video)}
+                >
+                  ▶ Aperçu
+                </button>
+              </div>
               <div className="project__content">
                 <h3 className="project__title">{project.title}</h3>
                 <p className="project__text">{project.description}</p>
-                <a className="project__github" href={project.github}>
+                <a
+                  className="project__github"
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Voir sur Github
                 </a>
               </div>
@@ -66,6 +93,30 @@ function Projects() {
           ))}
         </Swiper>
       </section>
+
+      {activeVideo && (
+        <div
+          className="project__video-overlay"
+          onClick={handleCloseVideo}
+          onKeyUp={handleCloseVideo}
+        >
+          <video
+            src={activeVideo}
+            preload="auto"
+            className="project__video-full"
+            autoPlay
+            loop
+          >
+            <track
+              kind="captions"
+              src=""
+              srcLang="fr"
+              label="French captions"
+              default
+            />
+          </video>
+        </div>
+      )}
     </>
   );
 }

@@ -11,7 +11,8 @@ function Home() {
         <h2 className="home__subtitle">Développeur web</h2>
         <img src="./arnaud.jpg" alt="Arnaud Guevaer" className="home__img" />
         <p className="home__status">
-          Status : En recherche d'une alternance pour septembre 2025
+          Status : En recherche d'une alternance pour le titre de Concepteur
+          développeur d'applications
         </p>
       </section>
 

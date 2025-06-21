@@ -53,6 +53,10 @@ function Projects() {
       <h2 className="section__title" id="projects">
         Projets
       </h2>
+      <p className="section__intro">
+        Découvrez mes réalisations : <br /> Des projets qui m’ont permis de
+        progresser, tester, et consolider mes compétences
+      </p>
       <section className="project__container">
         <Swiper
           modules={[Navigation, Autoplay]}

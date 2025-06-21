@@ -76,6 +76,13 @@ html {
 	width: 100%;
 }
 
+.section__intro {
+	color: var(--gray-12);
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
 h1,
 h2,
 label {

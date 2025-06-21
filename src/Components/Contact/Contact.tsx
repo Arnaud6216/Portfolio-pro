@@ -6,7 +6,7 @@ function Contact() {
       <section className="contact__section" id="contact">
         <h2 className="section__title">Contact</h2>
 
-        <p className="contact__intro">
+        <p className="section__intro">
           Une question, un retour, ou juste envie d’échanger autour de la tech ?{" "}
           <br />
           N’hésitez pas à me contacter !

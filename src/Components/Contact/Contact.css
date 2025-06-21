@@ -85,3 +85,9 @@ textarea {
 	border-color: var(--blue-11);
 	fill: var(--blue-12);
 }
+
+@media (min-width: 1024px) {
+	.contact__form {
+		max-width: 450px;
+	}
+}

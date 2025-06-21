@@ -73,11 +73,14 @@ function Skills() {
     <>
       <h2 className="section__title">Compétences</h2>
       <p className="section__intro">
-        Un aperçu des outils et technologies que j’ai utilisés pendant mon
-        <span className="section__intro--skill-text"> apprentissage</span> et
-        mes{" "}
+        Un aperçu des technologies mises en pratique
+        <span className="section__intro--skill-text">
+          {" "}
+          durant ma formation
+        </span>{" "}
+        , ainsi que celles{" "}
         <span className="section__intro--notions-text">
-          expériences professionnelles
+          découvertes en environnement professionnel
         </span>{" "}
       </p>
       <section className="skills__section" id="skills">

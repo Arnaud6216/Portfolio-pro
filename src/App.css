@@ -104,3 +104,10 @@ p {
 .home__status {
 	font-family: "DM Sans", sans-serif;
 }
+
+@media (max-width: 480px) {
+	.section__intro {
+		line-height: 35px;
+		margin: auto 0.4rem;
+	}
+}

@@ -71,19 +71,21 @@ function Skills() {
 
   return (
     <>
-      <h2 className="section__title">Compétences</h2>
+      <h2 className="section__title" id="skills">
+        Compétences
+      </h2>
       <p className="section__intro">
         Un aperçu des technologies mises en pratique
         <span className="section__intro--skill-text">
           {" "}
           durant ma formation
         </span>{" "}
-        , ainsi que celles{" "}
+        ,<br /> ainsi que celles{" "}
         <span className="section__intro--notions-text">
           découvertes en environnement professionnel
         </span>{" "}
       </p>
-      <section className="skills__section" id="skills">
+      <section className="skills__section">
         <article className="skills__article">
           <h3 className="skills__subtitle">Front-end</h3>
           <ul className="skills__list">

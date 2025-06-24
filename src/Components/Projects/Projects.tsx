@@ -64,6 +64,10 @@ function Projects() {
           slidesPerView={1}
           navigation
           loop
+          autoplay={{
+            delay: 6000,
+            disableOnInteraction: true,
+          }}
         >
           {projects.map((project) => (
             <SwiperSlide key={project.title}>

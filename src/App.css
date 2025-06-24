@@ -81,6 +81,7 @@ html {
 	font-weight: bold;
 	text-align: center;
 	letter-spacing: 1px;
+	line-height: 30px;
 }
 
 h1,
@@ -107,7 +108,6 @@ p {
 
 @media (max-width: 480px) {
 	.section__intro {
-		line-height: 35px;
 		margin: auto 0.4rem;
 	}
 }

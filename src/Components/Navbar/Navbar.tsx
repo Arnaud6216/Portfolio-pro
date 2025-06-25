@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
+  const [activeSection, setActiveSection] = useState<string>("profile");
 
   useEffect(() => {
     if (window.innerWidth >= 1024) {
@@ -11,6 +12,32 @@ function Navbar() {
     } else {
       setIsDesktop(false);
     }
+  }, []);
+
+  useEffect(() => {
+    const sections = ["profile", "skills", "projects", "contact"];
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+
+      let currentSection = "profile";
+
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (!el) continue;
+
+        if (scrollPosition >= el.offsetTop) {
+          currentSection = section;
+        }
+      }
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -22,7 +49,15 @@ function Navbar() {
           }
         >
           {isDesktop ? (
-            <a href="#profile" className="nav__link--desktop">
+            <a
+              href="#profile"
+              className="nav__link--desktop"
+              style={{
+                borderRadius: "10px 10px 0 0",
+                backgroundColor:
+                  activeSection === "profile" ? "var(--blue-9)" : "transparent",
+              }}
+            >
               Introduction
             </a>
           ) : (
@@ -32,7 +67,14 @@ function Navbar() {
           )}
 
           {isDesktop ? (
-            <a href="#skills" className="nav__link--desktop">
+            <a
+              href="#skills"
+              className="nav__link--desktop"
+              style={{
+                backgroundColor:
+                  activeSection === "skills" ? "var(--blue-9)" : "transparent",
+              }}
+            >
               Compétences
             </a>
           ) : (
@@ -42,7 +84,16 @@ function Navbar() {
           )}
 
           {isDesktop ? (
-            <a href="#projects" className="nav__link--desktop">
+            <a
+              href="#projects"
+              className="nav__link--desktop"
+              style={{
+                backgroundColor:
+                  activeSection === "projects"
+                    ? "var(--blue-9)"
+                    : "transparent",
+              }}
+            >
               Projets
             </a>
           ) : (
@@ -52,7 +103,15 @@ function Navbar() {
           )}
 
           {isDesktop ? (
-            <a href="#contact" className="nav__link--desktop">
+            <a
+              href="#contact"
+              className="nav__link--desktop"
+              style={{
+                borderRadius: "0 0 10px 10px",
+                backgroundColor:
+                  activeSection === "contact" ? "var(--blue-9)" : "transparent",
+              }}
+            >
               Contact
             </a>
           ) : (

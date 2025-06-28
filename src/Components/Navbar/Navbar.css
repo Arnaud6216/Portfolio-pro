@@ -84,7 +84,7 @@
 }
 
 .nav__link--desktop:hover {
-	color: var(--blue-11);
+	filter: drop-shadow(0 0 3px var(--blue-12));
 }
 
 .nav__link2--desktop:hover {

@@ -30,6 +30,23 @@
 	gap: 25px;
 }
 
+.nav__tool-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.nav__tool-icon {
+	padding: 0.3rem;
+	border-radius: 10px;
+}
+
+.nav__tool-icon:hover {
+	background-color: var(--blue-11);
+	stroke: var(--blue-1);
+}
+
 .nav__section1--desktop,
 .nav__section2--desktop {
 	display: flex;
@@ -41,7 +58,6 @@
 .nav__section1--desktop {
 	border: var(--blue-11) solid 1px;
 	border-radius: 10px;
-	margin-top: 3rem;
 	text-align: center;
 }
 

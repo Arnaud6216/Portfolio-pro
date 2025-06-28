@@ -5,6 +5,36 @@ import { useEffect, useState } from "react";
 function Navbar() {
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
   const [activeSection, setActiveSection] = useState<string>("profile");
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const body = document.body;
+
+    if (savedTheme === "light-theme") {
+      body.classList.remove("dark-theme");
+      body.classList.add("light-theme");
+      setIsDarkTheme(false);
+    } else {
+      body.classList.remove("light-theme");
+      body.classList.add("dark-theme");
+      setIsDarkTheme(true);
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const body = document.body;
+
+    if (isDarkTheme) {
+      body.classList.replace("dark-theme", "light-theme");
+      setIsDarkTheme(false);
+      localStorage.setItem("theme", "light-theme");
+    } else {
+      body.classList.replace("light-theme", "dark-theme");
+      setIsDarkTheme(true);
+      localStorage.setItem("theme", "dark-theme");
+    }
+  };
 
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 1024);
@@ -14,7 +44,7 @@ function Navbar() {
     const sections = ["profile", "skills", "projects", "contact"];
 
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150; // ajuster la valeur selon besoin
+      const scrollPosition = window.scrollY + 150;
       let currentSection = "profile";
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -27,13 +57,32 @@ function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // appel initial
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav className={isDesktop ? "nav--desktop" : "nav--mobile"}>
+      <section className="nav__tool-section">
+        {isDarkTheme ? (
+          <DynamicIcon
+            name="sun"
+            color="white"
+            size={24}
+            className="nav__tool-icon"
+            onClick={toggleTheme}
+          />
+        ) : (
+          <DynamicIcon
+            name="moon"
+            color="black"
+            size={24}
+            className="nav__tool-icon"
+            onClick={toggleTheme}
+          />
+        )}
+      </section>
       <section
         className={
           isDesktop ? "nav__section1--desktop" : "nav__section1--mobile"

@@ -7,6 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 
 function App() {
+
   return (
     <>
       <Navbar />

@@ -1,6 +1,9 @@
 import "./Skills.css";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Skills() {
+  const { t } = useLanguage();
+
   const skill = [
     {
       title: "Javascript",
@@ -72,22 +75,22 @@ function Skills() {
   return (
     <>
       <h2 className="section__title" id="skills">
-        Compétences
+        {t.skills.title}
       </h2>
       <p className="section__intro">
-        Un aperçu des technologies mises en pratique
+        {t.skills.description1}
         <span className="section__intro--skill-text">
           {" "}
-          durant ma formation
+          {t.skills.description2}
         </span>{" "}
-        ,<br /> ainsi que celles{" "}
+        ,<br /> {t.skills.description3}{" "}
         <span className="section__intro--notions-text">
-          découvertes en environnement professionnel
+          {t.skills.description4}
         </span>{" "}
       </p>
       <section className="skills__section">
         <article className="skills__article">
-          <h3 className="skills__subtitle">Front-end</h3>
+          <h3 className="skills__subtitle">{t.skills.subtitleFront}</h3>
           <ul className="skills__list">
             {skill
               .filter((s) => s.category === "front-end")
@@ -116,7 +119,7 @@ function Skills() {
         </article>
 
         <article className="skills__article">
-          <h3 className="skills__subtitle">Back-end</h3>
+          <h3 className="skills__subtitle">{t.skills.subtitleBack}</h3>
           <ul className="skills__list">
             {skill
               .filter((s) => s.category === "back-end")
@@ -145,7 +148,7 @@ function Skills() {
         </article>
 
         <article className="skills__article">
-          <h3 className="skills__subtitle">Outils</h3>
+          <h3 className="skills__subtitle">{t.skills.subtitleTools}</h3>
           <ul className="skills__list">
             {skill
               .filter((s) => s.category === "tools")

@@ -1,47 +1,79 @@
 {
 	"navbar": {
-		"link-intro": "Introduction",
-		"link-skills": "Compétences",
-		"link-projects": "Projets",
-		"link-contact": "Contact",
-		"link-linkedin": "Mon LinkedIn",
-		"link-github": "Mon GitHub",
-		"link-mail": "Mon Mail",
-		"link-cv": "Mon CV"
+		"intro": "Introduction",
+		"skills": "Compétences",
+		"projects": "Projets",
+		"contact": "Contact",
+		"linkedin": "Mon LinkedIn",
+		"github": "Mon GitHub",
+		"mail": "Mon Mail",
+		"cv": "Mon CV"
 	},
 	"home": {
-		"title-1": "Bonjour, je suis",
-		"title-2": "Arnaud Guevaer",
-		"title-3": "Développeur Web",
+		"title1": "Bonjour, je suis",
+		"title2": "Arnaud Guevaer",
+		"title3": "Développeur Web",
 		"status": "Status : En recherche d'une alternance pour le titre de Concepteur développeur d'applications",
-		"description-1": "Passionnée depuis toujours par les nouvelles technologies et les jeux vidéo, j’ai décidé de me reconvertir dans le développement web pour faire de cette passion mon métier.",
-		"description-2": "J’ai ainsi intégré la Wild Code School en septembre 2024 et obtenu mon diplôme de developpeur web et web mobile.",
-		"description-3": "Avant cette reconversion, mon parcours a débuté en tant que Gendarme Adjoint Volontaire, une expérience marquante qui m’a inculqué rigueur, esprit de cohésion et sens des responsabilités.",
-		"description-4": "Puis j’ai travaillé dans la logistique, où j’ai appris à m’adapter rapidement, à organiser efficacement mon travail et à comprendre les enjeux du e-commerce."
+		"description1": "Passionnée depuis toujours par les nouvelles technologies et les jeux vidéo, j’ai décidé de me reconvertir dans le développement web pour faire de cette passion mon métier.",
+		"description2": "J’ai ainsi intégré la Wild Code School en septembre 2024 et obtenu mon diplôme de developpeur web et web mobile.",
+		"description3": "Avant cette reconversion, mon parcours a débuté en tant que Gendarme Adjoint Volontaire, une expérience marquante qui m’a inculqué rigueur, esprit de cohésion et sens des responsabilités.",
+		"description4": "Puis j’ai travaillé dans la logistique, où j’ai appris à m’adapter rapidement, à organiser efficacement mon travail et à comprendre les enjeux du e-commerce."
 	},
 	"skills": {
 		"title": "Compétences",
-		"description-1": "Un aperçu des technologies mises en pratique",
-		"description-2": "durant ma formation",
-		"description-3": "ainsi que celles",
-		"description-4": "découvertes en environnement professionnel"
+		"subtitleFront": "Front-end",
+		"subtitleBack": "Back-end",
+		"subtitleTools": "Outils",
+		"description1": "Un aperçu des technologies mises en pratique",
+		"description2": "durant ma formation",
+		"description3": "ainsi que celles",
+		"description4": "découvertes en environnement professionnel"
 	},
 	"projects": {
 		"title": "Projets",
-		"description-1": "Découvrez mes réalisations :",
-		"description-2": "Des projets qui m’ont permis de progresser, tester, et consolider mes compétences",
-		"button-video": "▶ Aperçu",
-		"github-link": "Voir sur GitHub"
+		"description1": "Découvrez mes réalisations :",
+		"description2": "Des projets qui m’ont permis de progresser, tester, et consolider mes compétences",
+		"video": "▶ Aperçu",
+		"github": "Voir sur GitHub"
 	},
+	"projectsCard": [
+		{
+			"title": "Z Warriors Clicker",
+			"description": "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
+			"img": "./zwarrior.png",
+			"video": "./zwarrior-video.mp4",
+			"github": "https://github.com/Arnaud6216/Z-Warriors-Clicker",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		},
+		{
+			"title": "Code Quest Academy",
+			"description": "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies.",
+			"img": "./codequest.png",
+			"video": "./codequest-video.mp4",
+			"github": "https://github.com/WildCodeSchool-2024-09/JS-lille-P3-code-quest-academy",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		},
+		{
+			"title": "Legodex",
+			"description": "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h.",
+			"img": "legodex.png",
+			"video": "legodex-video.mp4",
+			"github": "https://github.com/Arnaud6216/LegoDex",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		}
+	],
 	"contact": {
 		"title": "Contact",
-		"description-1": "Une question, un retour, ou juste envie d’échanger autour de la tech ?",
-		"description-2": "N’hésitez pas à me contacter !",
-		"label-name": "Nom",
-		"label-email": "Email",
-		"label-message": "Message",
-		"button-send": "Envoyer"
+		"description1": "Une question, un retour, ou juste envie d’échanger autour de la tech ?",
+		"description2": "N’hésitez pas à me contacter !",
+		"name": "Nom",
+		"email": "Email",
+		"message": "Message",
+		"send": "Envoyer",
+		"placeholderName": "Tapez votre nom...",
+		"placeholderEmail": "Tapez votre email...",
+		"placeholderMessage": "Tapez votre message..."
 	},
-	"footer-1": "© Arnaud Guevaer",
-	"footer-2": "Tout droits reservés"
+	"footer1": "© Arnaud Guevaer",
+	"footer2": "Tout droits reservés"
 }

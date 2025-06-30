@@ -2,13 +2,15 @@ import "./Navbar.css";
 import { DynamicIcon } from "lucide-react/dynamic";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
+import FrFlagIcon from "./FrFlagIcon";
+import GbFlagIcon from "./GbFlagIcon";
 
 function Navbar() {
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
   const [activeSection, setActiveSection] = useState<string>("profile");
   const [isDarkTheme, setIsDarkTheme] = useState(true);
-
   const { lang, setLang } = useLanguage();
+  const { t } = useLanguage();
 
   const toggleLang = () => {
     setLang(lang === "fr" ? "en" : "fr");
@@ -89,9 +91,13 @@ function Navbar() {
             onClick={toggleTheme}
           />
         )}
-        <button type="button" onClick={toggleLang}>
-          {lang === "fr" ? "🇬🇧 English" : "🇫🇷 Français"}
-        </button>
+        <div
+          className="nav__tool-icon-flag"
+          onClick={toggleLang}
+          onKeyUp={toggleLang}
+        >
+          {lang === "fr" ? <GbFlagIcon /> : <FrFlagIcon />}
+        </div>
       </section>
       <section
         className={
@@ -109,7 +115,7 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            Introduction
+            {t.navbar.intro}
           </a>
         ) : (
           <a
@@ -135,7 +141,7 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            Compétences
+            {t.navbar.skills}
           </a>
         ) : (
           <a
@@ -161,7 +167,7 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            Projets
+            {t.navbar.projects}
           </a>
         ) : (
           <a
@@ -188,7 +194,7 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            Contact
+            {t.navbar.contact}
           </a>
         ) : (
           <a
@@ -216,16 +222,16 @@ function Navbar() {
               href="https://www.linkedin.com/in/arnaud-guevaer-11434a2a9/"
               className="nav__link2--desktop"
             >
-              Mon Linkedin
+              {t.navbar.linkedin}
             </a>
             <a
               href="https://github.com/Arnaud6216"
               className="nav__link2--desktop"
             >
-              Mon Github
+              {t.navbar.github}
             </a>
             <a href="mailto:guevaer8@gmail.com" className="nav__link2--desktop">
-              Mon Mail
+              {t.navbar.mail}
             </a>
           </>
         ) : (

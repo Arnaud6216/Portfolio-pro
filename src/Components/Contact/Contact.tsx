@@ -1,15 +1,16 @@
 import "./Contact.css";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Contact() {
+  const { t } = useLanguage();
   return (
     <>
       <section className="contact__section" id="contact">
-        <h2 className="section__title">Contact</h2>
+        <h2 className="section__title">{t.contact.title}</h2>
 
         <p className="section__intro">
-          Une question, un retour, ou juste envie d’échanger autour de la tech ?{" "}
-          <br />
-          N’hésitez pas à me contacter !
+          {t.contact.description1} <br />
+          {t.contact.description2}
         </p>
 
         <form
@@ -18,41 +19,41 @@ function Contact() {
           className="contact__form"
         >
           <label className="contact__label" htmlFor="name">
-            Nom
+            {t.contact.name}
           </label>
           <input
             className="contact__input"
             id="name"
             name="name"
             type="text"
-            placeholder="Tapez votre nom..."
+            placeholder={t.contact.placeholderName}
             required
           />
 
           <label className="contact__label" htmlFor="email">
-            Email
+            {t.contact.email}
           </label>
           <input
             className="contact__input"
             id="email"
             name="email"
             type="email"
-            placeholder="Tapez votre email..."
+            placeholder={t.contact.placeholderEmail}
             required
           />
 
           <label className="contact__label" htmlFor="message">
-            Message
+            {t.contact.message}
           </label>
           <textarea
             name="message"
             id="message"
-            placeholder="Tapez votre message..."
+            placeholder={t.contact.placeholderMessage}
             required
           />
 
           <button className="contact__button" type="submit">
-            Envoyer
+            {t.contact.send}
           </button>
         </form>
       </section>

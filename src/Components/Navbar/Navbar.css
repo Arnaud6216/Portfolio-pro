@@ -35,6 +35,8 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 1rem;
+	border: var(--blue-11) solid 1px;
+	border-radius: 10px;
 }
 
 .nav__tool-icon {
@@ -42,9 +44,14 @@
 	border-radius: 10px;
 }
 
+.nav__tool-icon-flag {
+	width: 30px;
+	height: 30px;
+}
+
 .nav__tool-icon:hover {
-	background-color: var(--blue-11);
-	stroke: var(--blue-1);
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
 }
 
 .nav__section1--desktop,

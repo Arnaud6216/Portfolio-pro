@@ -17,8 +17,8 @@ function Footer() {
   return (
     <>
       <footer className={isDesktop ? "footer--desktop" : "footer--mobile"}>
-        <p className="footer__line1">{t["footer-1"]}</p>
-        <p className="footer__line2">{t["footer-2"]}</p>
+        <p className="footer__line1">{t.footer1}</p>
+        <p className="footer__line2">{t.footer2}</p>
       </footer>
     </>
   );

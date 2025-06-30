@@ -1,47 +1,79 @@
 {
 	"navbar": {
-		"link-intro": "Introduction",
-		"link-skills": "Skills",
-		"link-projects": "Projects",
-		"link-contact": "Contact",
-		"link-linkedin": "My LinkedIn",
-		"link-github": "My GitHub",
-		"link-mail": "My Mail",
-		"link-cv": "My CV"
+		"intro": "Introduction",
+		"skills": "Skills",
+		"projects": "Projects",
+		"contact": "Contact",
+		"linkedin": "My LinkedIn",
+		"github": "My GitHub",
+		"mail": "My Mail",
+		"cv": "My CV"
 	},
 	"home": {
-		"title-1": "Hello, i am",
-		"title-2": "Arnaud Guevaer",
-		"title-3": "Web Developper",
+		"title1": "Hello, i am",
+		"title2": "Arnaud Guevaer",
+		"title3": "Web Developper",
 		"status": "Status: Seeking an apprenticeship for the title of Application Developer Designer",
-		"description-1": "Having always been passionate about new technologies and video games, I decided to retrain in web development to make this passion my profession.",
-		"description-2": "I joined Wild Code School in September 2024 and obtained my web and mobile web developer certification.",
-		"description-3": "Before this reconversion, my career began as a Gendarme Adjoint Volontaire (French military police), a significant experience which instilled in me rigor, a spirit of cohesion and a sense of responsibility.",
-		"description-4": "Then I worked in logistics, where I learned to adapt quickly, organize my work efficiently and understand the challenges of e-commerce."
+		"description1": "Having always been passionate about new technologies and video games, I decided to retrain in web development to make this passion my profession.",
+		"description2": "I joined Wild Code School in September 2024 and obtained my web and mobile web developer certification.",
+		"description3": "Before this reconversion, my career began as a Gendarme Adjoint Volontaire (French military police), a significant experience which instilled in me rigor, a spirit of cohesion and a sense of responsibility.",
+		"description4": "Then I worked in logistics, where I learned to adapt quickly, organize my work efficiently and understand the challenges of e-commerce."
 	},
 	"skills": {
 		"title": "Skills",
-		"description-1": "An overview of the technologies put into practice",
-		"description-2": "during my formation",
-		"description-3": "as well as those",
-		"description-4": "discovered in a professional environment"
+		"subtitleFront": "Front-end",
+		"subtitleBack": "Back-end",
+		"subtitleTools": "Tools",
+		"description1": "An overview of the technologies put into practice",
+		"description2": "during my formation",
+		"description3": "as well as those",
+		"description4": "discovered in a professional environment"
 	},
 	"projects": {
 		"title": "Projects",
-		"description-1": "Discover my creations :",
-		"description-2": "Projects that allowed me to progress, test, and consolidate my skills",
-		"button-video": "▶ Preview",
-		"github-link": "See on GitHub"
+		"description1": "Discover my creations :",
+		"description2": "Projects that allowed me to progress, test, and consolidate my skills",
+		"video": "▶ Preview",
+		"github": "See on GitHub"
 	},
+	"projectsCard": [
+		{
+			"title": "Z Warriors Clicker",
+			"description": "An incremental game set in the Dragon Ball universe, where players click to accumulate power, unlock powerful transformations and techniques, and defeat iconic enemies.",
+			"img": "./zwarrior.png",
+			"video": "./zwarrior-video.mp4",
+			"github": "https://github.com/Arnaud6216/Z-Warriors-Clicker",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		},
+		{
+			"title": "Code Quest Academy",
+			"description": "An interactive educational game that combines investigation and learning, where players take on the role of a web development student, solving puzzles to master HTML, CSS, JavaScript, and other technologies.",
+			"img": "./codequest.png",
+			"video": "./codequest-video.mp4",
+			"github": "https://github.com/WildCodeSchool-2024-09/JS-lille-P3-code-quest-academy",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		},
+		{
+			"title": "Legodex",
+			"description": "An application for cataloging LEGO collections. This individual final-year project aimed to create a complete web application, from design to completion, in 48 hours.",
+			"img": "legodex.png",
+			"video": "legodex-video.mp4",
+			"github": "https://github.com/Arnaud6216/LegoDex",
+			"technology": ["./react.png", "./ts.png", "./node.png", "./express.png"]
+		}
+	],
 	"contact": {
 		"title": "Contact",
-		"description-1": "A question, feedback, or just want to chat about tech ?",
-		"description-2": "Do not hesitate to contact me!",
-		"label-name": "Name",
-		"label-email": "Email",
-		"label-message": "Message",
-		"button-send": "Send"
+		"description1": "A question, feedback, or just want to chat about tech ?",
+		"description2": "Do not hesitate to contact me!",
+		"name": "Name",
+		"email": "Email",
+		"message": "Message",
+		"send": "Send",
+		"placeholderName": "Enter your name...",
+		"placeholderEmail": "Enter your email...",
+		"placeholderMessage": "Enter your message..."
 	},
-	"footer-1": "© Arnaud Guevaer",
-	"footer-2": "All rights reserved"
+	"footer1": "© Arnaud Guevaer",
+	"footer2": "All rights reserved"
 }

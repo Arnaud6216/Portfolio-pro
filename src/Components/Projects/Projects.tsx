@@ -4,8 +4,11 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Projects() {
+  const { t } = useLanguage();
+  const projects = t.projectsCard;
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const handleOpenVideo = (videoSrc: string) => {
@@ -16,46 +19,13 @@ function Projects() {
     setActiveVideo(null);
   };
 
-  const projects = [
-    {
-      title: "Z Warriors Clicker",
-      description:
-        "Un jeu incremental sur l'univers de Dragon Ball, où les joueurs cliquent pour accumuler de la puissance, débloquer des transformations et techniques puissantes, et vaincre des ennemis emblématiques.",
-      img: "./zwarrior.png",
-      video: "./zwarrior-video.mp4",
-      github: "https://github.com/Arnaud6216/Z-Warriors-Clicker",
-      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
-    },
-    {
-      title: "Code Quest Academy",
-      description:
-        "Un jeu éducatif interactif mêlant investigation et apprentissage, où les joueurs incarnent un étudiant en développement web, résolvant des énigmes pour maîtriser HTML, CSS, JavaScript, et autres technologies.",
-      img: "./codequest.png",
-      video: "./codequest-video.mp4",
-      github:
-        "https://github.com/WildCodeSchool-2024-09/JS-lille-P3-code-quest-academy",
-      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
-    },
-
-    {
-      title: "Legodex",
-      description:
-        "Une application permettant de cataloguer des collections de LEGO. Ce projet de fin de formation individuel avait pour objectif de créer une application web complète, de la conception à la réalisation, en 48h.",
-      img: "legodex.png",
-      video: "legodex-video.mp4",
-      github: "https://github.com/Arnaud6216/LegoDex",
-      technology: ["./react.png", "./ts.png", "./node.png", "./express.png"],
-    },
-  ];
-
   return (
     <>
       <h2 className="section__title" id="projects">
-        Projets
+        {t.projects.title}
       </h2>
       <p className="section__intro">
-        Découvrez mes réalisations : <br /> Des projets qui m’ont permis de
-        progresser, tester, et consolider mes compétences
+        {t.projects.description1} <br /> {t.projects.description2}
       </p>
       <section className="project__container">
         <Swiper
@@ -82,7 +52,7 @@ function Projects() {
                   className="project__video-btn"
                   onClick={() => handleOpenVideo(project.video)}
                 >
-                  ▶ Aperçu
+                  {t.projects.video}
                 </button>
               </div>
               <div className="project__content">
@@ -94,7 +64,7 @@ function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Voir sur Github
+                  {t.projects.github}
                 </a>
               </div>
             </SwiperSlide>

@@ -1,0 +1,46 @@
+{
+	"navbar": {
+		"link-intro": "Introduction",
+		"link-skills": "Compétences",
+		"link-projects": "Projets",
+		"link-contact": "Contact",
+		"link-linkedin": "Mon LinkedIn",
+		"link-github": "Mon GitHub",
+		"link-mail": "Mon Mail",
+		"link-cv": "Mon CV"
+	},
+	"home": {
+		"title-1": "Bonjour, je suis",
+		"title-2": "Arnaud Guevaer",
+		"title-3": "Développeur Web",
+		"status": "Status : En recherche d'une alternance pour le titre de Concepteur développeur d'applications",
+		"description-1": "Passionnée depuis toujours par les nouvelles technologies et les jeux vidéo, j’ai décidé de me reconvertir dans le développement web pour faire de cette passion mon métier.",
+		"description-2": "J’ai ainsi intégré la Wild Code School en septembre 2024 et obtenu mon diplôme de developpeur web et web mobile.",
+		"description-3": "Avant cette reconversion, mon parcours a débuté en tant que Gendarme Adjoint Volontaire, une expérience marquante qui m’a inculqué rigueur, esprit de cohésion et sens des responsabilités.",
+		"description-4": "Puis j’ai travaillé dans la logistique, où j’ai appris à m’adapter rapidement, à organiser efficacement mon travail et à comprendre les enjeux du e-commerce."
+	},
+	"skills": {
+		"title": "Compétences",
+		"description-1": "Un aperçu des technologies mises en pratique",
+		"description-2": "durant ma formation",
+		"description-3": "ainsi que celles",
+		"description-4": "découvertes en environnement professionnel"
+	},
+	"projects": {
+		"title": "Projets",
+		"description-1": "Découvrez mes réalisations :",
+		"description-2": "Des projets qui m’ont permis de progresser, tester, et consolider mes compétences",
+		"button-video": "▶ Aperçu",
+		"github-link": "Voir sur GitHub"
+	},
+	"contact": {
+		"title": "Contact",
+		"description-1": "Une question, un retour, ou juste envie d’échanger autour de la tech ?",
+		"description-2": "N’hésitez pas à me contacter !",
+		"label-name": "Nom",
+		"label-email": "Email",
+		"label-message": "Message",
+		"button-send": "Envoyer"
+	},
+	"footer": "Tout droits reservés"
+}

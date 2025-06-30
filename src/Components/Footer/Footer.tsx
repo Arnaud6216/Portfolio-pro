@@ -1,7 +1,9 @@
 import "./Footer.css";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Footer() {
+  const { t } = useLanguage();
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -15,8 +17,8 @@ function Footer() {
   return (
     <>
       <footer className={isDesktop ? "footer--desktop" : "footer--mobile"}>
-        <p className="footer__line1"> © Portfolio Arnaud Guevaer</p>
-        <p className="footer__line2">Tout droits reservés</p>
+        <p className="footer__line1">{t["footer-1"]}</p>
+        <p className="footer__line2">{t["footer-2"]}</p>
       </footer>
     </>
   );

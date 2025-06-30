@@ -16,7 +16,7 @@
 		"status": "Status: Seeking an apprenticeship for the title of Application Developer Designer",
 		"description-1": "Having always been passionate about new technologies and video games, I decided to retrain in web development to make this passion my profession.",
 		"description-2": "I joined Wild Code School in September 2024 and obtained my web and mobile web developer certification.",
-		"description-3": "Before this reconversion, my career began as a Gendarme Adjoint Volontaire, a significant experience which instilled in me rigor, a spirit of cohesion and a sense of responsibility.",
+		"description-3": "Before this reconversion, my career began as a Gendarme Adjoint Volontaire (French military police), a significant experience which instilled in me rigor, a spirit of cohesion and a sense of responsibility.",
 		"description-4": "Then I worked in logistics, where I learned to adapt quickly, organize my work efficiently and understand the challenges of e-commerce."
 	},
 	"skills": {
@@ -42,5 +42,6 @@
 		"label-message": "Message",
 		"button-send": "Send"
 	},
-	"footer": "All rights reserved"
+	"footer-1": "© Arnaud Guevaer",
+	"footer-2": "All rights reserved"
 }

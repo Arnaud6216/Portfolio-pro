@@ -42,5 +42,6 @@
 		"label-message": "Message",
 		"button-send": "Envoyer"
 	},
-	"footer": "Tout droits reservés"
+	"footer-1": "© Arnaud Guevaer",
+	"footer-2": "Tout droits reservés"
 }

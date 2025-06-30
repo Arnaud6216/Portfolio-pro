@@ -1,11 +1,18 @@
 import "./Navbar.css";
 import { DynamicIcon } from "lucide-react/dynamic";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 function Navbar() {
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
   const [activeSection, setActiveSection] = useState<string>("profile");
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  const { lang, setLang } = useLanguage();
+
+  const toggleLang = () => {
+    setLang(lang === "fr" ? "en" : "fr");
+  };
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -82,6 +89,9 @@ function Navbar() {
             onClick={toggleTheme}
           />
         )}
+        <button type="button" onClick={toggleLang}>
+          {lang === "fr" ? "🇬🇧 English" : "🇫🇷 Français"}
+        </button>
       </section>
       <section
         className={

@@ -28,6 +28,7 @@
 	transform: none;
 	z-index: 10;
 	gap: 25px;
+	overflow: hidden;
 }
 
 .nav__tool-section {
@@ -47,11 +48,11 @@
 .nav__tool-icon-flag {
 	width: 30px;
 	height: 30px;
+	padding: 0.3rem;
 }
 
 .nav__tool-icon:hover {
-	opacity: 0.8;
-	transition: opacity 0.3s ease;
+	background-color: var(--gray-8);
 }
 
 .nav__section1--desktop,
@@ -107,5 +108,11 @@
 @media (max-width: 1024px) {
 	.nav__tool-section {
 		margin-top: 0;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+	.nav--desktop {
+		width: 11%;
 	}
 }

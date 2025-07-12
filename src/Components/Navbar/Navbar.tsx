@@ -78,7 +78,7 @@ function Navbar() {
           <DynamicIcon
             name="sun"
             color="white"
-            size={24}
+            size={window.innerWidth <= 400 ? 20 : 24}
             className="nav__tool-icon"
             onClick={toggleTheme}
           />
@@ -86,7 +86,7 @@ function Navbar() {
           <DynamicIcon
             name="moon"
             color="black"
-            size={24}
+            size={window.innerWidth <= 400 ? 20 : 24}
             className="nav__tool-icon"
             onClick={toggleTheme}
           />
@@ -127,7 +127,11 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            <DynamicIcon name="user-round" color="white" size={24} />
+            <DynamicIcon
+              name="user-round"
+              color={isDarkTheme ? "white" : "black"}
+              size={window.innerWidth <= 400 ? 20 : 24}
+            />
           </a>
         )}
 
@@ -153,7 +157,11 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            <DynamicIcon name="wrench" color="white" size={24} />
+            <DynamicIcon
+              name="wrench"
+              color={isDarkTheme ? "white" : "black"}
+              size={window.innerWidth <= 400 ? 20 : 24}
+            />
           </a>
         )}
 
@@ -179,7 +187,11 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            <DynamicIcon name="folder-git-2" color="white" size={24} />
+            <DynamicIcon
+              name="folder-git-2"
+              color={isDarkTheme ? "white" : "black"}
+              size={window.innerWidth <= 400 ? 20 : 24}
+            />
           </a>
         )}
 
@@ -206,7 +218,11 @@ function Navbar() {
               transition: "background-color 0.3s ease",
             }}
           >
-            <DynamicIcon name="contact" color="white" size={24} />
+            <DynamicIcon
+              name="contact"
+              color={isDarkTheme ? "white" : "black"}
+              size={window.innerWidth <= 400 ? 20 : 24}
+            />
           </a>
         )}
       </section>

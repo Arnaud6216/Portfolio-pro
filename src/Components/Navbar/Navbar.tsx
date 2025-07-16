@@ -12,10 +12,16 @@ function Navbar() {
   const { lang, setLang } = useLanguage();
   const { t } = useLanguage();
 
+  // ---------------------------------------------
+  //----------------- Lang logic -----------------
+  // ---------------------------------------------
   const toggleLang = () => {
     setLang(lang === "fr" ? "en" : "fr");
   };
 
+  // ---------------------------------------------
+  //---------------- Theme logic ----------------
+  // ---------------------------------------------
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const body = document.body;
@@ -45,10 +51,16 @@ function Navbar() {
     }
   };
 
+  // ---------------------------------------------
+  //--Navbar style detection (mobile or desktop)--
+  // ---------------------------------------------
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 1024);
   }, []);
 
+  // ---------------------------------------------
+  //------- Scrolling section hover effect -------
+  // ---------------------------------------------
   useEffect(() => {
     const sections = ["profile", "skills", "projects", "contact"];
 

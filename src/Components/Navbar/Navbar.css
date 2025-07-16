@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
   border-radius: 10px;
 }
 
@@ -97,6 +96,12 @@
   text-decoration: none;
   color: var(--blue-11);
   font-weight: bold;
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .nav__link--mobile {
+    margin: 0 5px;
+  }
 }
 
 @media (max-width: 1024px) {

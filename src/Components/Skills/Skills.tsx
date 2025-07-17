@@ -77,17 +77,7 @@ function Skills() {
       <h2 className="section__title" id="skills">
         {t.skills.title}
       </h2>
-      <p className="section__intro">
-        {t.skills.description1}
-        <span className="section__intro--skill-text">
-          {" "}
-          {t.skills.description2}
-        </span>{" "}
-        ,<br /> {t.skills.description3}{" "}
-        <span className="section__intro--notions-text">
-          {t.skills.description4}
-        </span>{" "}
-      </p>
+      <p className="section__intro">{t.skills.description}</p>
       <section className="skills__section">
         <article className="skills__article">
           <h3 className="skills__subtitle">{t.skills.subtitleFront}</h3>

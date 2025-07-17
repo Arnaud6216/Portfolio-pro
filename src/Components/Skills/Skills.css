@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin: 5rem auto;
+  margin-bottom: 14rem;
 }
 
 .section__intro--skill-text {
@@ -37,7 +38,7 @@
 .skills__item {
   display: flex;
   align-items: center;
-  background-color: var(--gray-3);
+  background-color: var(--gray-2);
   border-radius: 10px;
   padding: 0.3rem;
   margin: 0.5rem 0;
@@ -46,7 +47,7 @@
 .skills__item--notion {
   display: flex;
   align-items: center;
-  background-color: var(--gray-7);
+  background-color: var(--gray-3);
   border-radius: 10px;
   padding: 0.3rem;
   margin: 0.5rem 0;
@@ -55,11 +56,11 @@
 }
 
 .skills__item:hover {
-  filter: brightness(0.8);
+  filter: brightness(1.2);
 }
 
 .skills__item--notion:hover {
-  filter: brightness(0.8);
+  filter: brightness(1.2);
 }
 
 .skills__img {

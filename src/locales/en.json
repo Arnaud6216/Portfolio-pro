@@ -14,7 +14,7 @@
 		"title2": "Arnaud Guevaer",
 		"title3": "Web Developper",
 		"status": "Status: Seeking an apprenticeship for the title of Application Developer Designer",
-		"description1": "Having always been passionate about new technologies and video games, I decided to retrain in web development to make this passion my profession.",
+		"description1": "A geek at heart, I've always been curious about the workings of digital technology. It was this desire to create and explore this universe that led me to change careers. Today, I'm determined to turn this passion into my career and take on new challenges.",
 		"description2": "I joined Wild Code School in September 2024 and obtained my web and mobile web developer certification.",
 		"description3": "Before this reconversion, my career began as a Gendarme Adjoint Volontaire (French military police), a significant experience which instilled in me rigor, a spirit of cohesion and a sense of responsibility.",
 		"description4": "Then I worked in logistics, where I learned to adapt quickly, organize my work efficiently and understand the challenges of e-commerce."
@@ -24,10 +24,7 @@
 		"subtitleFront": "Front-end",
 		"subtitleBack": "Back-end",
 		"subtitleTools": "Tools",
-		"description1": "An overview of the technologies put into practice",
-		"description2": "during my formation",
-		"description3": "as well as those",
-		"description4": "discovered in a professional environment"
+		"description": "An overview of the technologies I was able to learn, explore and practice"
 	},
 	"projects": {
 		"title": "Projects",

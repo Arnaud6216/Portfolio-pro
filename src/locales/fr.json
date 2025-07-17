@@ -14,7 +14,7 @@
 		"title2": "Arnaud Guevaer",
 		"title3": "Développeur Web",
 		"status": "Status : En recherche d'une alternance pour le titre de Concepteur développeur d'applications",
-		"description1": "Passionnée depuis toujours par les nouvelles technologies et les jeux vidéo, j’ai décidé de me reconvertir dans le développement web pour faire de cette passion mon métier.",
+		"description1": "Geek dans l’âme, j’ai toujours été curieux de comprendre les mécanismes du numérique. C’est cette envie de créer et d’explorer cet univers qui m’a poussé à changer de carrière. Aujourd’hui, je suis déterminé à faire de cette passion mon métier et à relever de nouveaux défis.",
 		"description2": "J’ai ainsi intégré la Wild Code School en septembre 2024 et obtenu mon diplôme de developpeur web et web mobile.",
 		"description3": "Avant cette reconversion, mon parcours a débuté en tant que Gendarme Adjoint Volontaire, une expérience marquante qui m’a inculqué rigueur, esprit de cohésion et sens des responsabilités.",
 		"description4": "Puis j’ai travaillé dans la logistique, où j’ai appris à m’adapter rapidement, à organiser efficacement mon travail et à comprendre les enjeux du e-commerce."
@@ -24,10 +24,7 @@
 		"subtitleFront": "Front-end",
 		"subtitleBack": "Back-end",
 		"subtitleTools": "Outils",
-		"description1": "Un aperçu des technologies mises en pratique",
-		"description2": "durant ma formation",
-		"description3": "ainsi que celles",
-		"description4": "découvertes en environnement professionnel"
+		"description": "Un aperçu des technologies que j’ai pu apprendre, explorer et mettre en pratique"
 	},
 	"projects": {
 		"title": "Projets",

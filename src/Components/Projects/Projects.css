@@ -9,6 +9,7 @@
   margin: 4rem auto;
   border: solid 2px var(--blue-9);
   border-radius: 10px;
+  margin-bottom: 14rem;
 }
 
 .project__container:hover {

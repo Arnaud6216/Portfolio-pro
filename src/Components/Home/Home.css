@@ -1,78 +1,82 @@
 .home__section1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home__section2 {
-	margin-bottom: 5rem;
-	display: flex;
-	justify-content: center;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .home__title {
-	margin: 2rem 3rem 0;
-	color: var(--gray-12);
-	text-align: center;
+  margin: 2rem 3rem 0;
+  color: var(--gray-12);
+  text-align: center;
 }
 
 .home__name {
-	color: var(--blue-11);
-	display: inline-block;
-	white-space: nowrap;
-	border-right: 2px solid #005eff;
-	font-size: 30px;
-	animation: typing 1.8s steps(14) 1, blink 0.75s step-end infinite;
-	overflow: hidden;
+  color: var(--blue-11);
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 2px solid #005eff;
+  font-size: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.replay {
+  animation: typing 1.8s steps(14) 1, blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-	50% {
-		border-color: transparent;
-	}
+  50% {
+    border-color: transparent;
+  }
 }
 
 .home__subtitle {
-	margin-top: 0.2rem;
-	font-size: 1.3rem;
-	color: var(--gray-12);
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+  color: var(--gray-12);
 }
 
 .home__img {
-	width: 70%;
-	max-width: 400px;
-	border-radius: 70px;
-	border: solid 2px var(--blue-6);
-	margin: 1rem 0;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 70px;
+  border: solid 2px var(--blue-6);
+  margin: 1rem 0;
 }
 
 .home__status {
-	position: relative;
-	text-align: center;
-	font-weight: bold;
-	background-color: var(--blue-5);
-	color: var(--blue-12);
-	padding: 1rem;
-	width: 80%;
-	border-radius: 10px;
-	max-width: 480px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--blue-5);
+  color: var(--blue-12);
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+  max-width: 480px;
 }
 
 .home__description {
-	margin: 2rem 1rem;
-	line-height: 20px;
-	color: var(--gray-12);
-	border-left: max(0.5em, .25em) solid var(--blue-7);
-	padding-left: 1em;
-	max-width: 650px;
+  margin: 2rem 1rem;
+  line-height: 20px;
+  color: var(--gray-12);
+  border-left: max(0.5em, 0.25em) solid var(--blue-7);
+  padding-left: 1em;
+  max-width: 650px;
 }

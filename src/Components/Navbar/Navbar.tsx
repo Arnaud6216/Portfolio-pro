@@ -11,6 +11,8 @@ function Navbar() {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   const { lang, setLang } = useLanguage();
   const { t } = useLanguage();
+  const tinyNavIconSize = window.innerWidth <= 400 ? 20 : 24;
+  const tinyNavLinkIconSize = window.innerWidth <= 344 ? 13 : 18;
 
   // ---------------------------------------------
   //----------------- Lang logic -----------------
@@ -85,12 +87,14 @@ function Navbar() {
 
   return (
     <nav className={isDesktop ? "nav--desktop" : "nav--mobile"}>
+      {/* ------------------------
+      ---------TOOL SECTION-------  */}
       <section className="nav__tool-section">
         {isDarkTheme ? (
           <DynamicIcon
             name="sun"
             color="white"
-            size={window.innerWidth <= 400 ? 20 : 24}
+            size={tinyNavIconSize}
             className="nav__tool-icon"
             onClick={toggleTheme}
           />
@@ -98,7 +102,7 @@ function Navbar() {
           <DynamicIcon
             name="moon"
             color="black"
-            size={window.innerWidth <= 400 ? 20 : 24}
+            size={tinyNavIconSize}
             className="nav__tool-icon"
             onClick={toggleTheme}
           />
@@ -111,6 +115,8 @@ function Navbar() {
           {lang === "fr" ? <GbFlagIcon /> : <FrFlagIcon />}
         </div>
       </section>
+      {/* ------------------------
+      ------NAVIGATION SECTION-----  */}
       <section
         className={
           isDesktop ? "nav__section1--desktop" : "nav__section1--mobile"
@@ -142,7 +148,7 @@ function Navbar() {
             <DynamicIcon
               name="user-round"
               color={isDarkTheme ? "white" : "black"}
-              size={window.innerWidth <= 400 ? 20 : 24}
+              size={tinyNavIconSize}
             />
           </a>
         )}
@@ -172,7 +178,7 @@ function Navbar() {
             <DynamicIcon
               name="wrench"
               color={isDarkTheme ? "white" : "black"}
-              size={window.innerWidth <= 400 ? 20 : 24}
+              size={tinyNavIconSize}
             />
           </a>
         )}
@@ -202,7 +208,7 @@ function Navbar() {
             <DynamicIcon
               name="folder-git-2"
               color={isDarkTheme ? "white" : "black"}
-              size={window.innerWidth <= 400 ? 20 : 24}
+              size={tinyNavIconSize}
             />
           </a>
         )}
@@ -233,12 +239,13 @@ function Navbar() {
             <DynamicIcon
               name="contact"
               color={isDarkTheme ? "white" : "black"}
-              size={window.innerWidth <= 400 ? 20 : 24}
+              size={tinyNavIconSize}
             />
           </a>
         )}
       </section>
-
+      {/* ------------------------
+      ---------LINK SECTION-------  */}
       <section
         className={
           isDesktop ? "nav__section2--desktop" : "nav__section2--mobile"
@@ -261,6 +268,9 @@ function Navbar() {
             <a href="mailto:guevaer8@gmail.com" className="nav__link2--desktop">
               {t.navbar.mail}
             </a>
+            <a href="./arnaud-guevaer-cv.pdf" className="nav__link2--desktop">
+              {t.navbar.cv}
+            </a>
           </>
         ) : (
           <>
@@ -268,16 +278,35 @@ function Navbar() {
               href="https://www.linkedin.com/in/arnaud-guevaer-11434a2a9/"
               className="nav__link--mobile"
             >
-              <DynamicIcon name="linkedin" color="black" size={18} />
+              <DynamicIcon
+                name="linkedin"
+                color="black"
+                size={tinyNavLinkIconSize}
+              />
             </a>
             <a
               href="https://github.com/Arnaud6216"
               className="nav__link--mobile"
             >
-              <DynamicIcon name="github" color="black" size={18} />
+              <DynamicIcon
+                name="github"
+                color="black"
+                size={tinyNavLinkIconSize}
+              />
             </a>
             <a href="mailto:guevaer8@gmail.com" className="nav__link--mobile">
-              <DynamicIcon name="mail" color="black" size={18} />
+              <DynamicIcon
+                name="mail"
+                color="black"
+                size={tinyNavLinkIconSize}
+              />
+            </a>
+            <a href="./arnaud-guevaer-cv.pdf" className="nav__link--mobile">
+              <DynamicIcon
+                name="file-text"
+                color="black"
+                size={tinyNavLinkIconSize}
+              />
             </a>
           </>
         )}

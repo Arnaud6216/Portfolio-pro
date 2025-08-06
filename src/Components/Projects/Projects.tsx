@@ -6,9 +6,17 @@ import "swiper/css/navigation";
 import { useState } from "react";
 import { useLanguage } from "../../context/LanguageContext";
 
+type Project = {
+  title: string;
+  img: string;
+  video: string;
+  description: string;
+  github: string;
+};
+
 function Projects() {
   const { t } = useLanguage();
-  const projects = t.projectsCard;
+  const projects: Project[] = t.projectsCard;
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   const handleOpenVideo = (videoSrc: string) => {

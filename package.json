@@ -7,7 +7,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d distgit subtree push --prefix dist origin gh-pages",
+		"deploy": "gh-pages -d dist",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},

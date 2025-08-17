@@ -92,6 +92,7 @@ function Projects() {
             className="project__video-full"
             autoPlay
             loop
+            muted
           >
             <track
               kind="captions"

@@ -280,7 +280,7 @@ function Navbar() {
             >
               <DynamicIcon
                 name="linkedin"
-                color="black"
+                color={isDarkTheme ? "white" : "black"}
                 size={tinyNavLinkIconSize}
               />
             </a>
@@ -290,21 +290,21 @@ function Navbar() {
             >
               <DynamicIcon
                 name="github"
-                color="black"
+                color={isDarkTheme ? "white" : "black"}
                 size={tinyNavLinkIconSize}
               />
             </a>
             <a href="mailto:guevaer8@gmail.com" className="nav__link--mobile">
               <DynamicIcon
                 name="mail"
-                color="black"
+                color={isDarkTheme ? "white" : "black"}
                 size={tinyNavLinkIconSize}
               />
             </a>
             <a href="./arnaud-guevaer-cv.pdf" className="nav__link--mobile">
               <DynamicIcon
                 name="file-text"
-                color="black"
+                color={isDarkTheme ? "white" : "black"}
                 size={tinyNavLinkIconSize}
               />
             </a>
